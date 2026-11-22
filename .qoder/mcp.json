@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "arc-ui": {
+      "type": "streamable-http",
+      "url": "https://uiarc.dev"
+    }
+  }
+}
