@@ -1,0 +1,28 @@
+node_modules/
+dist/
+build/
+.next/
+.expo/
+.env
+.env.local
+*.log
+.DS_Store
+
+# Local archive of the previous monorepo (not part of the product)
+_archive/
+
+# Expo CNG output (regenerate with `npx expo prebuild`)
+erp-mobile-app/android/
+erp-mobile-app/ios/
+erp-mobile-app/.export-check/
+
+# Next.js build output
+erp-web-dashboard/.next/
+erp-web-dashboard/.turbo/
+
+# Vendored AI skills (re-install with `npm run skills:sync` / `arc:sync`)
+.qoder/skills/
+
+# Nested standalone projects keep their own git history
+erp-web-dashboard/
+erp-mobile-app/

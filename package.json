@@ -1,0 +1,23 @@
+{
+  "name": "stars-erp",
+  "private": true,
+  "description": "S.T.A.R.S - multi-company HRIS & fleet logistics ERP (3 standalone projects)",
+  "scripts": {
+    "api:web:mobile": "node scripts/dev.mjs api web mobile",
+    "api:web": "node scripts/dev.mjs api web",
+    "api:mobile": "node scripts/dev.mjs api mobile",
+    "api": "node scripts/dev.mjs api",
+    "all": "node scripts/dev.mjs all",
+    "dev:api": "bun --cwd erp-backend-api run dev",
+    "dev:web": "bun --cwd erp-web-dashboard run dev",
+    "dev:mobile": "bun --cwd erp-mobile-app run start",
+    "build:web": "bun --cwd erp-web-dashboard run build",
+    "db:push": "bun --cwd erp-backend-api run db:push",
+    "db:seed": "bun --cwd erp-backend-api run db:seed",
+    "typecheck": "bun --cwd erp-backend-api run typecheck",
+    "skills:sync": "node scripts/sync-skills.mjs"
+  },
+  "engines": {
+    "bun": ">=1.4"
+  }
+}
