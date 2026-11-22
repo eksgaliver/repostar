@@ -8,6 +8,12 @@ build/
 *.log
 .DS_Store
 
+# Local toolchain binaries (downloaded per machine, e.g. ninja for native builds)
+.tools/
+
+# S3 credentials in plain text - canonical values belong in .env
+config.mc
+
 # Local archive of the previous monorepo (not part of the product)
 _archive/
 
