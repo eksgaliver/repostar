@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------- S.T.A.R.S ERP API
+# Copy to .env and fill in real values. Never commit the real file.
+NODE_ENV=development
+PORT=4000
+
+# PostgreSQL 18 (nama database peka huruf besar, jadi ditulis apa adanya)
+DATABASE_URL=postgres://postgres:f8c5c7b742f74d33981fec9da80f7d37@localhost:5432/DEMO_STARS
+
+# DragonflyDB / Redis (response cache + FIFO locks)
+REDIS_URL=redis://localhost:6379
+
+# Auth
+JWT_SECRET=change-me-in-production
+
+# Comma separated origins allowed by CORS
+CORS_ORIGIN=http://localhost:3000,http://localhost:8081
+
+# Attendance cycle: 26th -> 25th
+CUTOFF_START_DAY=26
+CUTOFF_END_DAY=25
