@@ -32,6 +32,19 @@ export const masterController = new Elysia({ prefix: "/master", tags: ["Master D
       }),
     },
   )
+  .delete("/companies/:id", async ({ headers, params, set }) => {
+    const auth = await guard(headers, ["admin"]);
+    if ("error" in auth) {
+      set.status = auth.status;
+      return { error: auth.error };
+    }
+    const removed = await master.deleteCompany(params.id);
+    if (!removed.length) {
+      set.status = 404;
+      return { error: "company_not_found" };
+    }
+    return { company: removed[0] };
+  })
   .get("/regions", async ({ headers, query, set }) => {
     const auth = await reader(headers);
     if ("error" in auth) {
@@ -107,6 +120,102 @@ export const masterController = new Elysia({ prefix: "/master", tags: ["Master D
     },
     { body: t.Object({ companyId: t.String(), code: t.String(), name: t.String() }) },
   )
+  .get("/departments/:id/members", async ({ headers, params, set }) => {
+    const auth = await reader(headers);
+    if ("error" in auth) {
+      set.status = auth.status;
+      return { error: auth.error };
+    }
+    return { members: await master.listDepartmentMembers(params.id) };
+  })
+  .get("/departments/:id/positions", async ({ headers, params, set }) => {
+    const auth = await reader(headers);
+    if ("error" in auth) {
+      set.status = auth.status;
+      return { error: auth.error };
+    }
+    return { positions: await master.listPositions(params.id) };
+  })
+  .post(
+    "/positions",
+    async ({ headers, body, set }) => {
+      const auth = await guard(headers, ["admin", "hr_admin"]);
+      if ("error" in auth) {
+        set.status = auth.status;
+        return { error: auth.error };
+      }
+      return { position: (await master.createPosition(body))[0] };
+    },
+    { body: t.Object({ departmentId: t.String(), name: t.String({ minLength: 2 }) }) },
+  )
+  .patch(
+    "/positions/:id",
+    async ({ headers, params, body, set }) => {
+      const auth = await guard(headers, ["admin", "hr_admin"]);
+      if ("error" in auth) {
+        set.status = auth.status;
+        return { error: auth.error };
+      }
+      const [position] = await master.updatePosition(params.id, body);
+      if (!position) {
+        set.status = 404;
+        return { error: "position_not_found" };
+      }
+      return { position };
+    },
+    {
+      body: t.Object({ name: t.String({ minLength: 2 }), isActive: t.Optional(t.Boolean()) }),
+    },
+  )
+  .delete("/positions/:id", async ({ headers, params, set }) => {
+    const auth = await guard(headers, ["admin", "hr_admin"]);
+    if ("error" in auth) {
+      set.status = auth.status;
+      return { error: auth.error };
+    }
+    const [position] = await master.deletePosition(params.id);
+    if (!position) {
+      set.status = 404;
+      return { error: "position_not_found" };
+    }
+    return { position };
+  })
+  .patch(
+    "/departments/:id",
+    async ({ headers, params, body, set }) => {
+      const auth = await guard(headers, ["admin", "hr_admin"]);
+      if ("error" in auth) {
+        set.status = auth.status;
+        return { error: auth.error };
+      }
+      const [department] = await master.updateDepartment(params.id, body);
+      if (!department) {
+        set.status = 404;
+        return { error: "department_not_found" };
+      }
+      return { department };
+    },
+    {
+      body: t.Object({
+        code: t.String({ maxLength: 16 }),
+        name: t.String(),
+        isActive: t.Optional(t.Boolean()),
+      }),
+    },
+  )
+  .delete("/departments/:id", async ({ headers, params, set }) => {
+    const auth = await guard(headers, ["admin", "hr_admin"]);
+    if ("error" in auth) {
+      set.status = auth.status;
+      return { error: auth.error };
+    }
+    const [department] = await master.deleteDepartment(params.id);
+    if (!department) {
+      set.status = 404;
+      return { error: "department_not_found" };
+    }
+    return { department };
+  })
   .get("/shifts", async ({ headers, query, set }) => {
     const auth = await reader(headers);
     if ("error" in auth) {

@@ -12,6 +12,7 @@ import { peopleController } from "./controllers/people.controller";
 import { attendanceController } from "./controllers/attendance.controller";
 import { operationsController } from "./controllers/operations.controller";
 import { contentController } from "./controllers/content.controller";
+import { documentsController } from "./controllers/documents.controller";
 import { portalController } from "./controllers/portal.controller";
 
 /**
@@ -58,6 +59,7 @@ const app = new Elysia()
   .use(attendanceController)
   .use(operationsController)
   .use(contentController)
+  .use(documentsController)
   .use(portalController)
   .onError(({ code, error }) => ({
     error: code,

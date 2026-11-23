@@ -88,6 +88,17 @@ export const picSourceEnum = pgEnum("pic_source", ["Operasional", "Marketing/Ala
 export const infoSourceEnum = pgEnum("info_source", ["Korlap", "Manajemen"]);
 export const unitStatusEnum = pgEnum("unit_status", ["active", "tas"]);
 export const bulletinStatusEnum = pgEnum("bulletin_status", ["draft", "pending", "published", "rejected"]);
+
+/** Outgoing letters; the type also picks the number prefix (IM, ANN, SE, ...). */
+export const documentTypeEnum = pgEnum("document_type", [
+  "internal_memo",
+  "announcement",
+  "circular",
+  "decree",
+  "warning",
+  "policy",
+]);
+export const documentStatusEnum = pgEnum("document_status", ["draft", "pending", "sent", "archived"]);
 export const doStatusEnum = pgEnum("do_status", ["pending", "priced", "scheduled", "completed", "cancelled"]);
 export const assetConditionEnum = pgEnum("asset_condition", ["good", "fair", "damaged"]);
 
@@ -159,6 +170,20 @@ export const departments = pgTable(
   (t) => [uniqueIndex("departments_company_code_idx").on(t.companyId, t.code)],
 );
 
+/** Positions belong to one department; employees pick from their department's list. */
+export const positions = pgTable(
+  "positions",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    departmentId: uuid("department_id")
+      .notNull()
+      .references(() => departments.id, { onDelete: "cascade" }),
+    name: varchar("name", { length: 120 }).notNull(),
+    isActive: boolean("is_active").notNull().default(true),
+  },
+  (t) => [uniqueIndex("positions_department_name_idx").on(t.departmentId, t.name)],
+);
+
 export const shifts = pgTable("shifts", {
   id: uuid("id").primaryKey().defaultRandom(),
   companyId: uuid("company_id")
@@ -213,6 +238,7 @@ export const employees = pgTable(
       .references(() => regions.id),
     branchId: uuid("branch_id").references(() => branches.id),
     departmentId: uuid("department_id").references(() => departments.id),
+    positionId: uuid("position_id").references(() => positions.id, { onDelete: "set null" }),
     shiftId: uuid("shift_id").references(() => shifts.id),
     /** [RegionCode].[Type].[Seq] -> PK.D.001 */
     employeeCode: varchar("employee_code", { length: 24 }).notNull().unique(),
@@ -225,6 +251,8 @@ export const employees = pgTable(
     phone: varchar("phone", { length: 32 }),
     email: varchar("email", { length: 160 }),
     address: text("address"),
+    /** Data URL of the employee photo, until object storage lands. */
+    photo: text("photo"),
     joinDate: date("join_date").notNull(),
     resignDate: date("resign_date"),
     status: employeeStatusEnum("status").notNull().default("active"),
@@ -620,6 +648,50 @@ export const bulletins = pgTable("bulletins", {
   publishedAt: timestamp("published_at", { withTimezone: true }),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
+
+/**
+ * A letter the company sends. `body` is the editor HTML and `signature` is the
+ * PNG data URL drawn in the signature pad, so a sent document stays a
+ * self-contained record. Drafts are editable; sent documents are frozen.
+ */
+export const documents = pgTable(
+  "documents",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    companyId: uuid("company_id")
+      .notNull()
+      .references(() => companies.id, { onDelete: "cascade" }),
+    authorId: uuid("author_id").references(() => users.id, { onDelete: "set null" }),
+    type: documentTypeEnum("type").notNull().default("internal_memo"),
+    number: varchar("number", { length: 80 }).notNull(),
+    title: varchar("title", { length: 200 }).notNull(),
+    body: text("body").notNull(),
+    signature: text("signature"),
+    signerName: varchar("signer_name", { length: 160 }),
+    signerTitle: varchar("signer_title", { length: 160 }),
+    /** The user asked to sign; only that account may complete a pending letter. */
+    signerUserId: uuid("signer_user_id").references(() => users.id, { onDelete: "set null" }),
+    signatureRequestedAt: timestamp("signature_requested_at", { withTimezone: true }),
+    signedAt: timestamp("signed_at", { withTimezone: true }),
+    /** JSON array of {name, type, size, dataUrl}; base64 keeps a letter portable. */
+    attachments: text("attachments"),
+    /** One invited reviewer; `review_status` tracks invited / approved / revision. */
+    reviewerUserId: uuid("reviewer_user_id").references(() => users.id, { onDelete: "set null" }),
+    reviewStatus: varchar("review_status", { length: 20 }),
+    reviewRequestedAt: timestamp("review_requested_at", { withTimezone: true }),
+    reviewedAt: timestamp("reviewed_at", { withTimezone: true }),
+    reviewNote: text("review_note"),
+    audienceType: varchar("audience_type", { length: 20 }).notNull().default("all"),
+    audienceDepartmentId: uuid("audience_department_id").references(() => departments.id, {
+      onDelete: "set null",
+    }),
+    status: documentStatusEnum("status").notNull().default("draft"),
+    sentAt: timestamp("sent_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [index("documents_company_status_idx").on(t.companyId, t.status)],
+);
 
 /* ------------------------------------------------ inter-company portal (B) */
 

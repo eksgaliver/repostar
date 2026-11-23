@@ -179,6 +179,61 @@ export const bulletinView = (row: Row) => ({
   publishedAt: row.publishedAt,
 });
 
+/** Attachments live as JSON text so one letter row carries its own files. */
+function parseAttachments(raw: unknown): Row[] {
+  if (!raw) return [];
+  if (Array.isArray(raw)) return raw as Row[];
+  try {
+    const parsed = JSON.parse(String(raw));
+    return Array.isArray(parsed) ? (parsed as Row[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+/** A letter: the paper view reads the same shape as the list row. */
+export const documentView = (row: Row) => ({
+  id: row.id,
+  companyId: row.companyId,
+  type: row.type,
+  number: row.number,
+  title: row.title,
+  body: row.body ?? null,
+  signature: row.signature ?? null,
+  signerName: row.signerName ?? null,
+  signerTitle: row.signerTitle ?? null,
+  signerUserId: row.signerUserId ?? null,
+  signatureRequestedAt: row.signatureRequestedAt ?? null,
+  signedAt: row.signedAt ?? null,
+  reviewerUserId: row.reviewerUserId ?? null,
+  reviewerName: row.reviewerName ?? null,
+  reviewStatus: row.reviewStatus ?? null,
+  reviewRequestedAt: row.reviewRequestedAt ?? null,
+  reviewedAt: row.reviewedAt ?? null,
+  reviewNote: row.reviewNote ?? null,
+  attachments: parseAttachments(row.attachments),
+  audienceType: row.audienceType ?? "all",
+  audienceDepartmentId: row.audienceDepartmentId ?? null,
+  audienceDepartmentName: row.departmentName ?? null,
+  status: row.status,
+  authorId: row.authorId ?? null,
+  authorName: row.authorName ?? null,
+  sentAt: row.sentAt ?? null,
+  createdAt: row.createdAt,
+  updatedAt: row.updatedAt,
+});
+
+/** An account that can be asked to sign a letter, with its printed position. */
+export const signerCandidateView = (row: Row) => ({
+  id: row.id,
+  fullName: row.fullName,
+  role: row.role,
+  employeeId: row.employeeId ?? null,
+  employeeCode: row.employeeCode ?? null,
+  positionName: row.positionName ?? null,
+  departmentName: row.departmentName ?? null,
+});
+
 /** WMPL workspace payload used by the dedicated /wmpl page on web and mobile. */
 export const wmplView = (data: Row) => ({
   company: data.company,

@@ -21,8 +21,24 @@ export async function getEmployee(id: string) {
     .select()
     .from(schema.mechanicProfiles)
     .where(eq(schema.mechanicProfiles.employeeId, id));
+  const [account] = await db
+    .select({ id: schema.users.id, email: schema.users.email, role: schema.users.role, isActive: schema.users.isActive })
+    .from(schema.users)
+    .where(eq(schema.users.employeeId, id));
+  const [position] = employee.positionId
+    ? await db
+        .select({ name: schema.positions.name })
+        .from(schema.positions)
+        .where(eq(schema.positions.id, employee.positionId))
+    : [];
 
-  return { ...employee, driverProfile: driver ?? null, mechanicProfile: mechanic ?? null };
+  return {
+    ...employee,
+    driverProfile: driver ?? null,
+    mechanicProfile: mechanic ?? null,
+    position: position?.name ?? null,
+    account: account ?? null,
+  };
 }
 
 export interface CreateEmployeeInput {
@@ -30,6 +46,7 @@ export interface CreateEmployeeInput {
   regionId: string;
   branchId?: string;
   departmentId?: string;
+  positionId?: string;
   shiftId?: string;
   type: "S" | "D" | "MK";
   fullName: string;
@@ -40,6 +57,8 @@ export interface CreateEmployeeInput {
   phone?: string;
   email?: string;
   address?: string;
+  /** Data URL; the HR form sends the picked file as base64. */
+  photo?: string;
   joinDate: string;
   managerId?: string;
   isDepartmentHead?: boolean;
@@ -64,6 +83,7 @@ export async function createEmployee(input: CreateEmployeeInput) {
       regionId: input.regionId,
       branchId: input.branchId,
       departmentId: input.departmentId,
+      positionId: input.positionId,
       shiftId: input.shiftId,
       employeeCode,
       type: input.type,
@@ -75,6 +95,7 @@ export async function createEmployee(input: CreateEmployeeInput) {
       phone: input.phone,
       email: input.email,
       address: input.address,
+      photo: input.photo,
       joinDate: input.joinDate,
       managerId: input.managerId,
       isDepartmentHead: input.isDepartmentHead ?? false,
@@ -100,6 +121,89 @@ export async function createEmployee(input: CreateEmployeeInput) {
     });
   }
 
+  return employee;
+}
+
+/** Temporary password every new account starts with; changed on first login. */
+export const ONBOARDING_PASSWORD = "onboarding";
+
+export type OnboardRole =
+  | "staff"
+  | "manager"
+  | "hr_admin"
+  | "opr_admin"
+  | "kpi_admin"
+  | "admin"
+  | "super_admin";
+
+export interface OnboardEmployeeInput extends CreateEmployeeInput {
+  account: { email: string; role: OnboardRole };
+}
+
+/**
+ * One HR action writes the two halves of a person: the employee biodata row and
+ * the login account. The account starts on the onboarding password and the
+ * email is checked first, so a clash fails before any biodata is written.
+ */
+export async function onboardEmployee(input: OnboardEmployeeInput) {
+  const email = input.account.email.trim().toLowerCase();
+  const [existing] = await db.select().from(schema.users).where(eq(schema.users.email, email));
+  if (existing) return { error: "email_taken" as const };
+
+  const employee = await createEmployee(input);
+  if (!employee) return { error: "region_not_found" as const };
+
+  const [user] = await db
+    .insert(schema.users)
+    .values({
+      companyId: input.companyId,
+      employeeId: employee.id,
+      email,
+      passwordHash: await Bun.password.hash(ONBOARDING_PASSWORD),
+      fullName: employee.fullName,
+      role: input.account.role,
+      isActive: true,
+    })
+    .returning();
+
+  return { employee, user };
+}
+
+/** Moves one employee into a department, or out of it with null. The position is
+ * dropped when the department changes, since positions belong to a department. */
+export async function assignDepartment(
+  employeeId: string,
+  departmentId: string | null,
+  positionId: string | null = null
+) {
+  const [employee] = await db
+    .update(schema.employees)
+    .set({ departmentId, positionId })
+    .where(eq(schema.employees.id, employeeId))
+    .returning();
+  return employee ?? null;
+}
+
+/** Only a super admin calls this; the controller enforces the guard. */
+export async function setEmployeeRole(employeeId: string, role: OnboardRole) {
+  const [user] = await db
+    .update(schema.users)
+    .set({ role })
+    .where(eq(schema.users.employeeId, employeeId))
+    .returning();
+  return user ?? null;
+}
+
+/** Resigning closes the record and disables the login in one step. */
+export async function resignEmployee(employeeId: string, resignDate: string) {
+  const [employee] = await db
+    .update(schema.employees)
+    .set({ status: "resigned", resignDate })
+    .where(eq(schema.employees.id, employeeId))
+    .returning();
+  if (!employee) return null;
+
+  await db.update(schema.users).set({ isActive: false }).where(eq(schema.users.employeeId, employeeId));
   return employee;
 }
 
