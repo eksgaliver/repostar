@@ -1,0 +1,3977 @@
+{
+  "source": "https://uiarc.dev/r/registry.json",
+  "generatedAt": "2026-11-18T04:37:41.243Z",
+  "items": [
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Progressively reveal supporting information in place.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-accordion",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/accordion/accordion.tsx",
+          "arcTarget": "@components/arc/accordion/accordion.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/accordion/accordion.module.css",
+          "arcTarget": "@components/arc/accordion/accordion.module.css"
+        }
+      ]
+    },
+    {
+      "name": "action-button",
+      "type": "registry:ui",
+      "title": "Action button",
+      "description": "A compact button for frequent toolbar actions.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/action-button/action-button.tsx",
+          "arcTarget": "@components/arc/action-button/action-button.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/action-button/action-button.module.css",
+          "arcTarget": "@components/arc/action-button/action-button.module.css"
+        }
+      ]
+    },
+    {
+      "name": "action-swap",
+      "type": "registry:ui",
+      "title": "Action swap",
+      "description": "Swap an action label while preserving its place and intent.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/action-swap/action-swap.tsx",
+          "arcTarget": "@components/arc/action-swap/action-swap.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/action-swap/action-swap.module.css",
+          "arcTarget": "@components/arc/action-swap/action-swap.module.css"
+        }
+      ]
+    },
+    {
+      "name": "activity-heatmap",
+      "type": "registry:ui",
+      "title": "Activity heatmap",
+      "description": "See a year of activity at a glance, one square per day.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/activity-heatmap/activity-heatmap.tsx",
+          "arcTarget": "@components/arc/activity-heatmap/activity-heatmap.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/activity-heatmap/activity-heatmap.module.css",
+          "arcTarget": "@components/arc/activity-heatmap/activity-heatmap.module.css"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "A persistent message that helps people recover or continue.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/alert/alert.tsx",
+          "arcTarget": "@components/arc/alert/alert.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/alert/alert.module.css",
+          "arcTarget": "@components/arc/alert/alert.module.css"
+        }
+      ]
+    },
+    {
+      "name": "animated-counter",
+      "type": "registry:ui",
+      "title": "Animated counter",
+      "description": "Give changing totals a clear sense of movement.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/animated-counter/animated-counter.tsx",
+          "arcTarget": "@components/arc/animated-counter/animated-counter.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/animated-counter/animated-counter.module.css",
+          "arcTarget": "@components/arc/animated-counter/animated-counter.module.css"
+        }
+      ]
+    },
+    {
+      "name": "announcement-bar",
+      "type": "registry:ui",
+      "title": "Announcement bar",
+      "description": "A top banner that rotates messages, counts down, and collapses smoothly when dismissed.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/announcement-bar/announcement-bar.tsx",
+          "arcTarget": "@components/arc/announcement-bar/announcement-bar.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/announcement-bar/announcement-bar.module.css",
+          "arcTarget": "@components/arc/announcement-bar/announcement-bar.module.css"
+        }
+      ]
+    },
+    {
+      "name": "arc-foundation",
+      "type": "registry:item",
+      "title": "Arc foundation",
+      "description": "Arc design tokens (color, surface, radius, shadow, accent, focus, light and dark themes), plus the shared motion presets. Install once per app.",
+      "categories": [
+        "foundation"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/foundation.css",
+          "arcTarget": "@components/arc/foundation.css"
+        }
+      ]
+    },
+    {
+      "name": "arc-motion-tokens",
+      "type": "registry:item",
+      "title": "Arc motion tokens",
+      "description": "The shared motion presets (durations, easings, springs, staggers) Arc components import. Installed automatically with any item that uses them.",
+      "categories": [
+        "foundation"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/motion-tokens.ts",
+          "arcTarget": "@components/arc/motion-tokens.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/motion-tokens.ts",
+          "arcTarget": "@components/arc/lib/motion-tokens.ts"
+        }
+      ]
+    },
+    {
+      "name": "arc-skill",
+      "type": "registry:file",
+      "title": "Arc agent skill",
+      "description": "An Agent Skill that teaches Claude Code and other agents how to choose, install, and compose Arc components, with rule files for design, components, motion, accessibility, composition, and responsive layout.",
+      "categories": [
+        "ai"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "target": ".qoder/skills/arc/SKILL.md",
+          "arcTarget": "~/.claude/skills/arc/SKILL.md"
+        },
+        {
+          "target": ".qoder/skills/arc/INSTRUCTIONS.md",
+          "arcTarget": "~/.claude/skills/arc/INSTRUCTIONS.md"
+        },
+        {
+          "target": ".qoder/skills/arc/accessibility.md",
+          "arcTarget": "~/.claude/skills/arc/accessibility.md"
+        },
+        {
+          "target": ".qoder/skills/arc/checklist.md",
+          "arcTarget": "~/.claude/skills/arc/checklist.md"
+        },
+        {
+          "target": ".qoder/skills/arc/components.md",
+          "arcTarget": "~/.claude/skills/arc/components.md"
+        },
+        {
+          "target": ".qoder/skills/arc/composition.md",
+          "arcTarget": "~/.claude/skills/arc/composition.md"
+        },
+        {
+          "target": ".qoder/skills/arc/copy.md",
+          "arcTarget": "~/.claude/skills/arc/copy.md"
+        },
+        {
+          "target": ".qoder/skills/arc/design.md",
+          "arcTarget": "~/.claude/skills/arc/design.md"
+        },
+        {
+          "target": ".qoder/skills/arc/example-dashboard.md",
+          "arcTarget": "~/.claude/skills/arc/example-dashboard.md"
+        },
+        {
+          "target": ".qoder/skills/arc/example-pricing.md",
+          "arcTarget": "~/.claude/skills/arc/example-pricing.md"
+        },
+        {
+          "target": ".qoder/skills/arc/example-settings.md",
+          "arcTarget": "~/.claude/skills/arc/example-settings.md"
+        },
+        {
+          "target": ".qoder/skills/arc/motion.md",
+          "arcTarget": "~/.claude/skills/arc/motion.md"
+        },
+        {
+          "target": ".qoder/skills/arc/responsive.md",
+          "arcTarget": "~/.claude/skills/arc/responsive.md"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "A compact identity marker for people and accounts.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/avatar/avatar.tsx",
+          "arcTarget": "@components/arc/avatar/avatar.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/avatar/avatar.module.css",
+          "arcTarget": "@components/arc/avatar/avatar.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/arc-provider.tsx",
+          "arcTarget": "@components/arc/lib/arc-provider.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:ui",
+      "title": "Avatar group",
+      "description": "Show a team or set of contributors in a small space.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "avatar"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/avatar-group/avatar-group.tsx",
+          "arcTarget": "@components/arc/avatar-group/avatar-group.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/avatar-group/avatar-group.module.css",
+          "arcTarget": "@components/arc/avatar-group/avatar-group.module.css"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "A small label for status, category, or metadata.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/badge/badge.tsx",
+          "arcTarget": "@components/arc/badge/badge.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/badge/badge.module.css",
+          "arcTarget": "@components/arc/badge/badge.module.css"
+        }
+      ]
+    },
+    {
+      "name": "bar-chart",
+      "type": "registry:ui",
+      "title": "Bar chart",
+      "description": "Compare one measure across days and scrub any bar for its value.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/bar-chart/bar-chart.tsx",
+          "arcTarget": "@components/arc/bar-chart/bar-chart.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/bar-chart/bar-chart.module.css",
+          "arcTarget": "@components/arc/bar-chart/bar-chart.module.css"
+        }
+      ]
+    },
+    {
+      "name": "billing-toggle",
+      "type": "registry:ui",
+      "title": "Billing toggle",
+      "description": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "animated-counter"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/billing-toggle/billing-toggle.tsx",
+          "arcTarget": "@components/arc/billing-toggle/billing-toggle.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/billing-toggle/billing-toggle.module.css",
+          "arcTarget": "@components/arc/billing-toggle/billing-toggle.module.css"
+        }
+      ]
+    },
+    {
+      "name": "blog-grid",
+      "type": "registry:block",
+      "title": "Blog grid",
+      "description": "A blog index with a featured post, category filter, post cards, pagination and an in-place reader.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/blog-grid/blog-grid.tsx",
+          "arcTarget": "@components/arc/blocks/blog-grid/blog-grid.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/blog-grid/blog-grid-data.ts",
+          "arcTarget": "@components/arc/blocks/blog-grid/blog-grid-data.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/blog-grid/blog-grid.module.css",
+          "arcTarget": "@components/arc/blocks/blog-grid/blog-grid.module.css"
+        }
+      ]
+    },
+    {
+      "name": "bottom-sheet",
+      "type": "registry:ui",
+      "title": "Bottom sheet",
+      "description": "A sheet that rests at a peek or full height and follows your finger.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/bottom-sheet/bottom-sheet.tsx",
+          "arcTarget": "@components/arc/bottom-sheet/bottom-sheet.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/bottom-sheet/bottom-sheet.module.css",
+          "arcTarget": "@components/arc/bottom-sheet/bottom-sheet.module.css"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "Show where a page sits in a hierarchy.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/breadcrumb/breadcrumb.tsx",
+          "arcTarget": "@components/arc/breadcrumb/breadcrumb.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/breadcrumb/breadcrumb.module.css",
+          "arcTarget": "@components/arc/breadcrumb/breadcrumb.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/arc-provider.tsx",
+          "arcTarget": "@components/arc/lib/arc-provider.tsx"
+        }
+      ]
+    },
+    {
+      "name": "brush-chart",
+      "type": "registry:ui",
+      "title": "Brush chart",
+      "description": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/brush-chart/brush-chart.tsx",
+          "arcTarget": "@components/arc/brush-chart/brush-chart.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/brush-chart/brush-chart.module.css",
+          "arcTarget": "@components/arc/brush-chart/brush-chart.module.css"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "A clear, responsive action with quiet secondary states.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/button/button.tsx",
+          "arcTarget": "@components/arc/button/button.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/button/button.module.css",
+          "arcTarget": "@components/arc/button/button.module.css"
+        }
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button group",
+      "description": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/button-group/button-group.tsx",
+          "arcTarget": "@components/arc/button-group/button-group.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/button-group/button-group.module.css",
+          "arcTarget": "@components/arc/button-group/button-group.module.css"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "Browse dates in a clear, compact month view.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/calendar/calendar.tsx",
+          "arcTarget": "@components/arc/calendar/calendar.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/use-today.ts",
+          "arcTarget": "@components/arc/lib/use-today.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/calendar/calendar.module.css",
+          "arcTarget": "@components/arc/calendar/calendar.module.css"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "A contained group of related content and actions.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/card/card.tsx",
+          "arcTarget": "@components/arc/card/card.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/card/card.module.css",
+          "arcTarget": "@components/arc/card/card.module.css"
+        }
+      ]
+    },
+    {
+      "name": "card-stack",
+      "type": "registry:ui",
+      "title": "Card stack",
+      "description": "Review a deck one card at a time, with a throw and an undo.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/card-stack/card-stack.tsx",
+          "arcTarget": "@components/arc/card-stack/card-stack.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/card-stack/card-stack.module.css",
+          "arcTarget": "@components/arc/card-stack/card-stack.module.css"
+        }
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "Browse a row of slides by dragging, flicking, or arrowing through them.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/carousel/carousel.tsx",
+          "arcTarget": "@components/arc/carousel/carousel.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/carousel/carousel.module.css",
+          "arcTarget": "@components/arc/carousel/carousel.module.css"
+        }
+      ]
+    },
+    {
+      "name": "changelog-feed",
+      "type": "registry:block",
+      "title": "Changelog feed",
+      "description": "Release notes you can filter, open in place, and scroll through month by month.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "copy-button"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/changelog-feed/changelog-feed.tsx",
+          "arcTarget": "@components/arc/blocks/changelog-feed/changelog-feed.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/changelog-feed/changelog-feed.module.css",
+          "arcTarget": "@components/arc/blocks/changelog-feed/changelog-feed.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/media.ts",
+          "arcTarget": "@components/arc/lib/media.ts"
+        }
+      ]
+    },
+    {
+      "name": "chat-thread",
+      "type": "registry:ui",
+      "title": "Chat thread",
+      "description": "A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/chat-thread/chat-thread.tsx",
+          "arcTarget": "@components/arc/chat-thread/chat-thread.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/chat-thread/chat-thread.module.css",
+          "arcTarget": "@components/arc/chat-thread/chat-thread.module.css"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "A binary choice with a precise, legible state.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-checkbox",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/checkbox/checkbox.tsx",
+          "arcTarget": "@components/arc/checkbox/checkbox.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/checkbox/checkbox.module.css",
+          "arcTarget": "@components/arc/checkbox/checkbox.module.css"
+        }
+      ]
+    },
+    {
+      "name": "chip-group",
+      "type": "registry:ui",
+      "title": "Chip group",
+      "description": "Filter by a few facets with chips that morph as you pick them.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/chip-group/chip-group.tsx",
+          "arcTarget": "@components/arc/chip-group/chip-group.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/chip-group/chip-group.module.css",
+          "arcTarget": "@components/arc/chip-group/chip-group.module.css"
+        }
+      ]
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "Code block",
+      "description": "Present code with legible hierarchy and copy access.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "copy-button"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/code-block/code-block.tsx",
+          "arcTarget": "@components/arc/code-block/code-block.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/code-block/code-block.module.css",
+          "arcTarget": "@components/arc/code-block/code-block.module.css"
+        }
+      ]
+    },
+    {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "title": "Color picker",
+      "description": "A swatch that grows into a picker with format morphing, eyedropper, saved swatches, and contrast readout.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "text-morph"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/color-picker/color-picker.tsx",
+          "arcTarget": "@components/arc/color-picker/color-picker.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/color-picker/color-picker.module.css",
+          "arcTarget": "@components/arc/color-picker/color-picker.module.css"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "Search and select from a list without leaving the field.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/combobox/combobox.tsx",
+          "arcTarget": "@components/arc/combobox/combobox.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/combobox/combobox.module.css",
+          "arcTarget": "@components/arc/combobox/combobox.module.css"
+        }
+      ]
+    },
+    {
+      "name": "command-palette",
+      "type": "registry:block",
+      "title": "Command palette",
+      "description": "A complete keyboard driven action surface with search, grouped results, and shortcuts.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/command-palette/command-palette.tsx",
+          "arcTarget": "@components/arc/command-palette/command-palette.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/command-palette/command-palette.module.css",
+          "arcTarget": "@components/arc/command-palette/command-palette.module.css"
+        }
+      ]
+    },
+    {
+      "name": "comment-thread",
+      "type": "registry:ui",
+      "title": "Comment thread",
+      "description": "Threaded comments with replies, reactions, mentions, inline edit, and resolve.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/comment-thread/comment-thread.tsx",
+          "arcTarget": "@components/arc/comment-thread/comment-thread.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/comment-thread/comment-thread.module.css",
+          "arcTarget": "@components/arc/comment-thread/comment-thread.module.css"
+        }
+      ]
+    },
+    {
+      "name": "comparison-table",
+      "type": "registry:block",
+      "title": "Comparison table",
+      "description": "An us versus them table with a sticky header, a highlighted column, and a stacked phone view.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/comparison-table/comparison-table.tsx",
+          "arcTarget": "@components/arc/blocks/comparison-table/comparison-table.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/comparison-table/comparison-table-data.ts",
+          "arcTarget": "@components/arc/blocks/comparison-table/comparison-table-data.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/comparison-table/comparison-table.module.css",
+          "arcTarget": "@components/arc/blocks/comparison-table/comparison-table.module.css"
+        }
+      ]
+    },
+    {
+      "name": "confirm-morph",
+      "type": "registry:ui",
+      "title": "Confirm morph",
+      "description": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/confirm-morph/confirm-morph.tsx",
+          "arcTarget": "@components/arc/confirm-morph/confirm-morph.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/confirm-morph/confirm-morph.module.css",
+          "arcTarget": "@components/arc/confirm-morph/confirm-morph.module.css"
+        }
+      ]
+    },
+    {
+      "name": "contact-section",
+      "type": "registry:block",
+      "title": "Contact section",
+      "description": "A validated contact form that morphs into a confirmation, support channels, and office cards with local times.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "avatar",
+        "button",
+        "copy-button",
+        "input",
+        "segmented-control",
+        "textarea"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/contact-section/contact-section.tsx",
+          "arcTarget": "@components/arc/blocks/contact-section/contact-section.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/contact-section/contact-section.module.css",
+          "arcTarget": "@components/arc/blocks/contact-section/contact-section.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/media.ts",
+          "arcTarget": "@components/arc/lib/media.ts"
+        }
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context menu",
+      "description": "Secondary actions kept close to the selected object.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/context-menu/context-menu.tsx",
+          "arcTarget": "@components/arc/context-menu/context-menu.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/context-menu/context-menu.module.css",
+          "arcTarget": "@components/arc/context-menu/context-menu.module.css"
+        }
+      ]
+    },
+    {
+      "name": "cookie-consent",
+      "type": "registry:ui",
+      "title": "Cookie consent",
+      "description": "A consent bar that morphs into preferences and folds into a reopen button.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button",
+        "switch"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/cookie-consent/cookie-consent.tsx",
+          "arcTarget": "@components/arc/cookie-consent/cookie-consent.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/cookie-consent/cookie-consent.module.css",
+          "arcTarget": "@components/arc/cookie-consent/cookie-consent.module.css"
+        }
+      ]
+    },
+    {
+      "name": "copy-button",
+      "type": "registry:ui",
+      "title": "Copy button",
+      "description": "Copy a value with immediate confirmation.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/copy-button/copy-button.tsx",
+          "arcTarget": "@components/arc/copy-button/copy-button.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/copy-button/copy-button.module.css",
+          "arcTarget": "@components/arc/copy-button/copy-button.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/use-copy-feedback.ts",
+          "arcTarget": "@components/arc/lib/use-copy-feedback.ts"
+        }
+      ]
+    },
+    {
+      "name": "countdown",
+      "type": "registry:ui",
+      "title": "Countdown",
+      "description": "A launch countdown with rolling digits that morphs into a live state at zero.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/countdown/countdown.tsx",
+          "arcTarget": "@components/arc/countdown/countdown.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/countdown/countdown.module.css",
+          "arcTarget": "@components/arc/countdown/countdown.module.css"
+        }
+      ]
+    },
+    {
+      "name": "cta-section",
+      "type": "registry:block",
+      "title": "CTA section",
+      "description": "A call to action as a centered closing section, a split beside a setup card that completes itself, or a dismissible banner.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button",
+        "segmented-control"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/cta-section/cta-section.tsx",
+          "arcTarget": "@components/arc/blocks/cta-section/cta-section.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/cta-section/cta-section-data.ts",
+          "arcTarget": "@components/arc/blocks/cta-section/cta-section-data.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/media.ts",
+          "arcTarget": "@components/arc/lib/media.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/cta-section/cta-section.module.css",
+          "arcTarget": "@components/arc/blocks/cta-section/cta-section.module.css"
+        }
+      ]
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:ui",
+      "title": "Date picker",
+      "description": "Choose a date without losing context.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "calendar"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/date-picker/date-picker.tsx",
+          "arcTarget": "@components/arc/date-picker/date-picker.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/date-picker/date-picker.module.css",
+          "arcTarget": "@components/arc/date-picker/date-picker.module.css"
+        }
+      ]
+    },
+    {
+      "name": "date-range-picker",
+      "type": "registry:ui",
+      "title": "Date range picker",
+      "description": "A range picker that grows from its trigger into two months with presets and a stretching range highlight.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/date-range-picker/date-range-picker.tsx",
+          "arcTarget": "@components/arc/date-range-picker/date-range-picker.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/use-today.ts",
+          "arcTarget": "@components/arc/lib/use-today.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/date-range-picker/date-range-picker.module.css",
+          "arcTarget": "@components/arc/date-range-picker/date-range-picker.module.css"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "A focused surface for decisions that need attention.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/dialog/dialog.tsx",
+          "arcTarget": "@components/arc/dialog/dialog.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/dialog/dialog.module.css",
+          "arcTarget": "@components/arc/dialog/dialog.module.css"
+        }
+      ]
+    },
+    {
+      "name": "donut-chart",
+      "type": "registry:ui",
+      "title": "Donut chart",
+      "description": "A donut whose arcs morph between datasets, with the active value rolling into the center.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/donut-chart/donut-chart.tsx",
+          "arcTarget": "@components/arc/donut-chart/donut-chart.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/donut-chart/donut-chart.module.css",
+          "arcTarget": "@components/arc/donut-chart/donut-chart.module.css"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "A temporary side surface for focused work.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/drawer/drawer.tsx",
+          "arcTarget": "@components/arc/drawer/drawer.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/drawer/drawer.module.css",
+          "arcTarget": "@components/arc/drawer/drawer.module.css"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown menu",
+      "description": "A focused list of actions anchored to a trigger.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/dropdown-menu/dropdown-menu.tsx",
+          "arcTarget": "@components/arc/dropdown-menu/dropdown-menu.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/dropdown-menu/dropdown-menu.module.css",
+          "arcTarget": "@components/arc/dropdown-menu/dropdown-menu.module.css"
+        }
+      ]
+    },
+    {
+      "name": "elastic-slider",
+      "type": "registry:ui",
+      "title": "Elastic slider",
+      "description": "A slider that stretches like rubber past its ends, with a swaying value tag and detents the thumb clicks into.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/elastic-slider/elastic-slider.tsx",
+          "arcTarget": "@components/arc/elastic-slider/elastic-slider.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/elastic-slider/elastic-slider.module.css",
+          "arcTarget": "@components/arc/elastic-slider/elastic-slider.module.css"
+        }
+      ]
+    },
+    {
+      "name": "empty-state",
+      "type": "registry:ui",
+      "title": "Empty state",
+      "description": "A useful next step when there is nothing to show yet.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/empty-state/empty-state.tsx",
+          "arcTarget": "@components/arc/empty-state/empty-state.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/empty-state/empty-state.module.css",
+          "arcTarget": "@components/arc/empty-state/empty-state.module.css"
+        }
+      ]
+    },
+    {
+      "name": "empty-states",
+      "type": "registry:block",
+      "title": "Empty states",
+      "description": "Four empty states in one illustration whose shapes morph between scenes as you switch tabs.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/empty-states/empty-states.tsx",
+          "arcTarget": "@components/arc/blocks/empty-states/empty-states.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/empty-states/empty-states.module.css",
+          "arcTarget": "@components/arc/blocks/empty-states/empty-states.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/empty-states/empty-states-art.ts",
+          "arcTarget": "@components/arc/blocks/empty-states/empty-states-art.ts"
+        }
+      ]
+    },
+    {
+      "name": "expandable-card",
+      "type": "registry:ui",
+      "title": "Expandable card",
+      "description": "Give a dense card more room when requested.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/expandable-card/expandable-card.tsx",
+          "arcTarget": "@components/arc/expandable-card/expandable-card.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/expandable-card/expandable-card.module.css",
+          "arcTarget": "@components/arc/expandable-card/expandable-card.module.css"
+        }
+      ]
+    },
+    {
+      "name": "expandable-text",
+      "type": "registry:ui",
+      "title": "Expandable text",
+      "description": "Long text clamped to a few lines with a soft fade that glides open with Read more and closes with Show less, shown only when the text overflows.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/expandable-text/expandable-text.tsx",
+          "arcTarget": "@components/arc/expandable-text/expandable-text.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/expandable-text/expandable-text.module.css",
+          "arcTarget": "@components/arc/expandable-text/expandable-text.module.css"
+        }
+      ]
+    },
+    {
+      "name": "expanding-button-group",
+      "type": "registry:ui",
+      "title": "Expanding button group",
+      "description": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/expanding-button-group/expanding-button-group.tsx",
+          "arcTarget": "@components/arc/expanding-button-group/expanding-button-group.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/expanding-button-group/expanding-button-group.module.css",
+          "arcTarget": "@components/arc/expanding-button-group/expanding-button-group.module.css"
+        }
+      ]
+    },
+    {
+      "name": "expanding-search",
+      "type": "registry:ui",
+      "title": "Expanding search",
+      "description": "An icon that morphs into a search field with results beneath it.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/expanding-search/expanding-search.tsx",
+          "arcTarget": "@components/arc/expanding-search/expanding-search.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/expanding-search/expanding-search.module.css",
+          "arcTarget": "@components/arc/expanding-search/expanding-search.module.css"
+        }
+      ]
+    },
+    {
+      "name": "faq-section",
+      "type": "registry:block",
+      "title": "FAQ section",
+      "description": "FAQs as an accordion, a topic rail, or a searchable list that highlights matches.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "search-field",
+        "segmented-control"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/faq-section/faq-section.tsx",
+          "arcTarget": "@components/arc/blocks/faq-section/faq-section.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/faq-section/faq-section.module.css",
+          "arcTarget": "@components/arc/blocks/faq-section/faq-section.module.css"
+        }
+      ]
+    },
+    {
+      "name": "file-dropzone",
+      "type": "registry:ui",
+      "title": "File dropzone",
+      "description": "A generous target for dropping one or more files.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/file-dropzone/file-dropzone.tsx",
+          "arcTarget": "@components/arc/file-dropzone/file-dropzone.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/file-dropzone/file-dropzone.module.css",
+          "arcTarget": "@components/arc/file-dropzone/file-dropzone.module.css"
+        }
+      ]
+    },
+    {
+      "name": "file-upload",
+      "type": "registry:block",
+      "title": "File upload",
+      "description": "A complete file selection flow with constraints, progress, and error feedback.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/file-upload/file-upload.tsx",
+          "arcTarget": "@components/arc/file-upload/file-upload.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/file-upload/file-upload.module.css",
+          "arcTarget": "@components/arc/file-upload/file-upload.module.css"
+        }
+      ]
+    },
+    {
+      "name": "filter-toolbar",
+      "type": "registry:ui",
+      "title": "Filter toolbar",
+      "description": "Keep collection filters close and easy to reset.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/filter-toolbar/filter-toolbar.tsx",
+          "arcTarget": "@components/arc/filter-toolbar/filter-toolbar.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/filter-toolbar/filter-toolbar.module.css",
+          "arcTarget": "@components/arc/filter-toolbar/filter-toolbar.module.css"
+        }
+      ]
+    },
+    {
+      "name": "floating-button-group",
+      "type": "registry:ui",
+      "title": "Floating button group",
+      "description": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/floating-button-group/floating-button-group.tsx",
+          "arcTarget": "@components/arc/floating-button-group/floating-button-group.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/floating-button-group/floating-button-group.module.css",
+          "arcTarget": "@components/arc/floating-button-group/floating-button-group.module.css"
+        }
+      ]
+    },
+    {
+      "name": "gauge",
+      "type": "registry:ui",
+      "title": "Gauge",
+      "description": "Show a value against a known range.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/gauge/gauge.tsx",
+          "arcTarget": "@components/arc/gauge/gauge.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/gauge/gauge.module.css",
+          "arcTarget": "@components/arc/gauge/gauge.module.css"
+        }
+      ]
+    },
+    {
+      "name": "hero-section",
+      "type": "registry:block",
+      "title": "Hero section",
+      "description": "Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "avatar",
+        "button",
+        "copy-button",
+        "line-chart",
+        "segmented-control",
+        "sparkline"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-section.tsx",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-section.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-section.module.css",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-section.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-content.tsx",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-content.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-content.module.css",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-content.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-motion.ts",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-motion.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-mesh.tsx",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-mesh.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-mesh.module.css",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-mesh.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-cadence.tsx",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-cadence.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-cadence.module.css",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-cadence.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-relay.tsx",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-relay.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-relay.module.css",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-relay.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-lumen.tsx",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-lumen.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-lumen.module.css",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-lumen.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/hero-section/hero-lumen-data.ts",
+          "arcTarget": "@components/arc/blocks/hero-section/hero-lumen-data.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/media.ts",
+          "arcTarget": "@components/arc/lib/media.ts"
+        }
+      ]
+    },
+    {
+      "name": "hold-to-confirm",
+      "type": "registry:ui",
+      "title": "Hold to confirm",
+      "description": "Confirm a destructive action by holding, not tapping.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/hold-to-confirm/hold-to-confirm.tsx",
+          "arcTarget": "@components/arc/hold-to-confirm/hold-to-confirm.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/hold-to-confirm/hold-to-confirm.module.css",
+          "arcTarget": "@components/arc/hold-to-confirm/hold-to-confirm.module.css"
+        }
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover card",
+      "description": "Preview a person or link on hover or focus without leaving the page.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/hover-card/hover-card.tsx",
+          "arcTarget": "@components/arc/hover-card/hover-card.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/hover-card/hover-card.module.css",
+          "arcTarget": "@components/arc/hover-card/hover-card.module.css"
+        }
+      ]
+    },
+    {
+      "name": "icon-morph",
+      "type": "registry:ui",
+      "title": "Icon morph",
+      "description": "Icons that morph between states: menu to close, play to pause, copy to check, and more.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/icon-morph/icon-morph.tsx",
+          "arcTarget": "@components/arc/icon-morph/icon-morph.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/icon-morph/icon-morph.module.css",
+          "arcTarget": "@components/arc/icon-morph/icon-morph.module.css"
+        }
+      ]
+    },
+    {
+      "name": "image-compare",
+      "type": "registry:ui",
+      "title": "Image compare",
+      "description": "Drag a divider across two images to see what changed.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/image-compare/image-compare.tsx",
+          "arcTarget": "@components/arc/image-compare/image-compare.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/image-compare/image-compare.module.css",
+          "arcTarget": "@components/arc/image-compare/image-compare.module.css"
+        }
+      ]
+    },
+    {
+      "name": "in-view-title",
+      "type": "registry:ui",
+      "title": "In-view title",
+      "description": "Bring a section title in as it scrolls into view.",
+      "categories": [
+        "text"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/in-view-title/in-view-title.tsx",
+          "arcTarget": "@components/arc/in-view-title/in-view-title.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/in-view-title/in-view-title.module.css",
+          "arcTarget": "@components/arc/in-view-title/in-view-title.module.css"
+        }
+      ]
+    },
+    {
+      "name": "inline-edit",
+      "type": "registry:ui",
+      "title": "Inline edit",
+      "description": "Rename in place: the text becomes a field without moving.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/inline-edit/inline-edit.tsx",
+          "arcTarget": "@components/arc/inline-edit/inline-edit.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/inline-edit/inline-edit.module.css",
+          "arcTarget": "@components/arc/inline-edit/inline-edit.module.css"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "A single line field with clear labels and useful states.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/input/input.tsx",
+          "arcTarget": "@components/arc/input/input.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/input/input.module.css",
+          "arcTarget": "@components/arc/input/input.module.css"
+        }
+      ]
+    },
+    {
+      "name": "json-viewer",
+      "type": "registry:ui",
+      "title": "JSON viewer",
+      "description": "A collapsible JSON tree with search, paging for long arrays, and copy value or path.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/json-viewer/json-viewer.tsx",
+          "arcTarget": "@components/arc/json-viewer/json-viewer.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/json-viewer/json-viewer.module.css",
+          "arcTarget": "@components/arc/json-viewer/json-viewer.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/use-copy-feedback.ts",
+          "arcTarget": "@components/arc/lib/use-copy-feedback.ts"
+        }
+      ]
+    },
+    {
+      "name": "line-chart",
+      "type": "registry:ui",
+      "title": "Line chart",
+      "description": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/line-chart/line-chart.tsx",
+          "arcTarget": "@components/arc/line-chart/line-chart.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/line-chart/line-chart.module.css",
+          "arcTarget": "@components/arc/line-chart/line-chart.module.css"
+        }
+      ]
+    },
+    {
+      "name": "login-centered",
+      "type": "registry:block",
+      "title": "Centered login",
+      "description": "A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button",
+        "input",
+        "otp-input"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/login-centered/login-centered.tsx",
+          "arcTarget": "@components/arc/blocks/login-centered/login-centered.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/login-centered/login-centered.module.css",
+          "arcTarget": "@components/arc/blocks/login-centered/login-centered.module.css"
+        }
+      ]
+    },
+    {
+      "name": "logo-marquee",
+      "type": "registry:block",
+      "title": "Logo marquee",
+      "description": "A quiet, continuously moving row of brand marks with a pause control.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/logo-marquee/logo-marquee.tsx",
+          "arcTarget": "@components/arc/blocks/logo-marquee/logo-marquee.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/logo-marquee/logo-marquee.module.css",
+          "arcTarget": "@components/arc/blocks/logo-marquee/logo-marquee.module.css"
+        }
+      ]
+    },
+    {
+      "name": "mention-input",
+      "type": "registry:ui",
+      "title": "Mention input",
+      "description": "A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/mention-input/mention-input.tsx",
+          "arcTarget": "@components/arc/mention-input/mention-input.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/mention-input/mention-input.module.css",
+          "arcTarget": "@components/arc/mention-input/mention-input.module.css"
+        }
+      ]
+    },
+    {
+      "name": "metric-card",
+      "type": "registry:ui",
+      "title": "Metric card",
+      "description": "A compact summary for a number that needs context.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "animated-counter"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/metric-card/metric-card.tsx",
+          "arcTarget": "@components/arc/metric-card/metric-card.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/metric-card/metric-card.module.css",
+          "arcTarget": "@components/arc/metric-card/metric-card.module.css"
+        }
+      ]
+    },
+    {
+      "name": "money-input",
+      "type": "registry:ui",
+      "title": "Money input",
+      "description": "A currency field with live grouping, stable width, rolling digits, and minor-unit output.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/money-input/money-input.tsx",
+          "arcTarget": "@components/arc/money-input/money-input.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/money-input/money-input.module.css",
+          "arcTarget": "@components/arc/money-input/money-input.module.css"
+        }
+      ]
+    },
+    {
+      "name": "morph-select",
+      "type": "registry:ui",
+      "title": "Morph select",
+      "description": "A select whose trigger grows into the list, with a gliding highlight and type-ahead.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/morph-select/morph-select.tsx",
+          "arcTarget": "@components/arc/morph-select/morph-select.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/morph-select/morph-select.module.css",
+          "arcTarget": "@components/arc/morph-select/morph-select.module.css"
+        }
+      ]
+    },
+    {
+      "name": "multi-select",
+      "type": "registry:ui",
+      "title": "Multi-select",
+      "description": "Select several values while keeping the field readable.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/multi-select/multi-select.tsx",
+          "arcTarget": "@components/arc/multi-select/multi-select.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/multi-select/multi-select.module.css",
+          "arcTarget": "@components/arc/multi-select/multi-select.module.css"
+        }
+      ]
+    },
+    {
+      "name": "newsletter-signup",
+      "type": "registry:block",
+      "title": "Newsletter signup",
+      "description": "An email signup framed by a stack of past issues; subscribing drops the next issue, addressed to you, onto the front.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "animated-counter",
+        "segmented-control",
+        "switch"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/newsletter-signup/newsletter-signup.tsx",
+          "arcTarget": "@components/arc/blocks/newsletter-signup/newsletter-signup.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/newsletter-signup/newsletter-signup-data.ts",
+          "arcTarget": "@components/arc/blocks/newsletter-signup/newsletter-signup-data.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/media.ts",
+          "arcTarget": "@components/arc/lib/media.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/newsletter-signup/newsletter-signup.module.css",
+          "arcTarget": "@components/arc/blocks/newsletter-signup/newsletter-signup.module.css"
+        }
+      ]
+    },
+    {
+      "name": "notification-center",
+      "type": "registry:block",
+      "title": "Notification center",
+      "description": "A home for updates with read state, grouped information, and animated disclosure.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "avatar"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/notification-center/notification-center.tsx",
+          "arcTarget": "@components/arc/notification-center/notification-center.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/notification-center/notification-center.module.css",
+          "arcTarget": "@components/arc/notification-center/notification-center.module.css"
+        }
+      ]
+    },
+    {
+      "name": "number-field",
+      "type": "registry:ui",
+      "title": "Number field",
+      "description": "Enter a bounded number with clear increment controls.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/number-field/number-field.tsx",
+          "arcTarget": "@components/arc/number-field/number-field.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/number-field/number-field.module.css",
+          "arcTarget": "@components/arc/number-field/number-field.module.css"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-checklist",
+      "type": "registry:ui",
+      "title": "Onboarding checklist",
+      "description": "Guide a new workspace through setup, one step at a time.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/onboarding-checklist/onboarding-checklist.tsx",
+          "arcTarget": "@components/arc/onboarding-checklist/onboarding-checklist.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/onboarding-checklist/onboarding-checklist.module.css",
+          "arcTarget": "@components/arc/onboarding-checklist/onboarding-checklist.module.css"
+        }
+      ]
+    },
+    {
+      "name": "otp-input",
+      "type": "registry:block",
+      "title": "OTP input",
+      "description": "A six digit verification flow with paste support and keyboard navigation.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/otp-input/otp-input.tsx",
+          "arcTarget": "@components/arc/otp-input/otp-input.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/otp-input/otp-input.module.css",
+          "arcTarget": "@components/arc/otp-input/otp-input.module.css"
+        }
+      ]
+    },
+    {
+      "name": "page-header",
+      "type": "registry:block",
+      "title": "Page header",
+      "description": "A project page header that folds into a compact bar as you scroll, with tabs whose counts roll.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "@radix-ui/react-tabs",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "animated-counter",
+        "avatar-group",
+        "avatar",
+        "badge",
+        "button",
+        "progress"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/page-header/page-header.tsx",
+          "arcTarget": "@components/arc/blocks/page-header/page-header.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/use-copy-feedback.ts",
+          "arcTarget": "@components/arc/lib/use-copy-feedback.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/page-header/page-header.module.css",
+          "arcTarget": "@components/arc/blocks/page-header/page-header.module.css"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Move through a long collection with clear bounds.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/pagination/pagination.tsx",
+          "arcTarget": "@components/arc/pagination/pagination.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/pagination/pagination.module.css",
+          "arcTarget": "@components/arc/pagination/pagination.module.css"
+        }
+      ]
+    },
+    {
+      "name": "password-field",
+      "type": "registry:ui",
+      "title": "Password field",
+      "description": "Capture sensitive text with a visible reveal control.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/password-field/password-field.tsx",
+          "arcTarget": "@components/arc/password-field/password-field.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/password-field/password-field.module.css",
+          "arcTarget": "@components/arc/password-field/password-field.module.css"
+        }
+      ]
+    },
+    {
+      "name": "password-strength",
+      "type": "registry:ui",
+      "title": "Password strength",
+      "description": "Show how strong a new password is while it is typed.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/password-strength/password-strength.tsx",
+          "arcTarget": "@components/arc/password-strength/password-strength.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/password-strength/password-strength.module.css",
+          "arcTarget": "@components/arc/password-strength/password-strength.module.css"
+        }
+      ]
+    },
+    {
+      "name": "phone-input",
+      "type": "registry:ui",
+      "title": "Phone input",
+      "description": "A phone field with a country picker, formatting as you type, and E.164 output.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/phone-input/phone-input.tsx",
+          "arcTarget": "@components/arc/phone-input/phone-input.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/phone-input/phone-input.module.css",
+          "arcTarget": "@components/arc/phone-input/phone-input.module.css"
+        }
+      ]
+    },
+    {
+      "name": "plan-comparison",
+      "type": "registry:block",
+      "title": "Plan comparison",
+      "description": "Compare meaningful differences between plans and billing periods.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button",
+        "segmented-control",
+        "switch"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/plan-comparison/plan-comparison.tsx",
+          "arcTarget": "@components/arc/blocks/plan-comparison/plan-comparison.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/plan-comparison/plan-comparison.module.css",
+          "arcTarget": "@components/arc/blocks/plan-comparison/plan-comparison.module.css"
+        }
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "A small anchored surface for contextual information.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/popover/popover.tsx",
+          "arcTarget": "@components/arc/popover/popover.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/popover/popover.module.css",
+          "arcTarget": "@components/arc/popover/popover.module.css"
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Show how much of a known task is complete.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/progress/progress.tsx",
+          "arcTarget": "@components/arc/progress/progress.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/progress/progress.module.css",
+          "arcTarget": "@components/arc/progress/progress.module.css"
+        }
+      ]
+    },
+    {
+      "name": "radio-cards",
+      "type": "registry:ui",
+      "title": "Radio cards",
+      "description": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/radio-cards/radio-cards.tsx",
+          "arcTarget": "@components/arc/radio-cards/radio-cards.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/radio-cards/radio-cards.module.css",
+          "arcTarget": "@components/arc/radio-cards/radio-cards.module.css"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio group",
+      "description": "Choose one option from a visible set.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/radio-group/radio-group.tsx",
+          "arcTarget": "@components/arc/radio-group/radio-group.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/radio-group/radio-group.module.css",
+          "arcTarget": "@components/arc/radio-group/radio-group.module.css"
+        }
+      ]
+    },
+    {
+      "name": "range-histogram-slider",
+      "type": "registry:ui",
+      "title": "Range histogram slider",
+      "description": "A price range over a live histogram of the data, lighting the bars inside the range and settling on bar edges.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/range-histogram-slider/range-histogram-slider.tsx",
+          "arcTarget": "@components/arc/range-histogram-slider/range-histogram-slider.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/range-histogram-slider/range-histogram-slider.module.css",
+          "arcTarget": "@components/arc/range-histogram-slider/range-histogram-slider.module.css"
+        }
+      ]
+    },
+    {
+      "name": "rating",
+      "type": "registry:ui",
+      "title": "Rating",
+      "description": "A simple, accessible way to capture a numeric opinion.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/rating/rating.tsx",
+          "arcTarget": "@components/arc/rating/rating.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/rating/rating.module.css",
+          "arcTarget": "@components/arc/rating/rating.module.css"
+        }
+      ]
+    },
+    {
+      "name": "reactions",
+      "type": "registry:ui",
+      "title": "Reactions",
+      "description": "Acknowledge a post in one tap, with counts that roll.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/reactions/reactions.tsx",
+          "arcTarget": "@components/arc/reactions/reactions.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/reactions/reactions.module.css",
+          "arcTarget": "@components/arc/reactions/reactions.module.css"
+        }
+      ]
+    },
+    {
+      "name": "reorderable-list",
+      "type": "registry:ui",
+      "title": "Reorderable list",
+      "description": "Organize items with direct drag and drop.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/reorderable-list/reorderable-list.tsx",
+          "arcTarget": "@components/arc/reorderable-list/reorderable-list.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/reorderable-list/reorderable-list.module.css",
+          "arcTarget": "@components/arc/reorderable-list/reorderable-list.module.css"
+        }
+      ]
+    },
+    {
+      "name": "resizable-panels",
+      "type": "registry:ui",
+      "title": "Resizable panels",
+      "description": "Trade space between panes by dragging the divider between them.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/resizable-panels/resizable-panels.tsx",
+          "arcTarget": "@components/arc/resizable-panels/resizable-panels.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/resizable-panels/resizable-panels.module.css",
+          "arcTarget": "@components/arc/resizable-panels/resizable-panels.module.css"
+        }
+      ]
+    },
+    {
+      "name": "rich-text-editor",
+      "type": "registry:ui",
+      "title": "Rich text editor",
+      "description": "A lightweight editor with markdown shortcuts, a floating toolbar, a slash menu, and HTML and markdown output.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/rich-text-editor/rich-text-editor.tsx",
+          "arcTarget": "@components/arc/rich-text-editor/rich-text-editor.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/rich-text-editor/rich-text-editor.module.css",
+          "arcTarget": "@components/arc/rich-text-editor/rich-text-editor.module.css"
+        }
+      ]
+    },
+    {
+      "name": "ridgeline",
+      "type": "registry:ui",
+      "title": "Ridgeline",
+      "description": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/ridgeline/ridgeline.tsx",
+          "arcTarget": "@components/arc/ridgeline/ridgeline.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/ridgeline/ridgeline.module.css",
+          "arcTarget": "@components/arc/ridgeline/ridgeline.module.css"
+        }
+      ]
+    },
+    {
+      "name": "ruler-slider",
+      "type": "registry:ui",
+      "title": "Ruler slider",
+      "description": "A tape of ticks that slides under a fixed needle, with momentum, snapping, and a rolling readout.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/ruler-slider/ruler-slider.tsx",
+          "arcTarget": "@components/arc/ruler-slider/ruler-slider.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/ruler-slider/ruler-slider.module.css",
+          "arcTarget": "@components/arc/ruler-slider/ruler-slider.module.css"
+        }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll area",
+      "description": "A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/scroll-area/scroll-area.tsx",
+          "arcTarget": "@components/arc/scroll-area/scroll-area.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/scroll-area/scroll-area.module.css",
+          "arcTarget": "@components/arc/scroll-area/scroll-area.module.css"
+        }
+      ]
+    },
+    {
+      "name": "scrub-input",
+      "type": "registry:ui",
+      "title": "Scrub input",
+      "description": "A Figma-style number field: drag the label to scrub, or type values, units, and arithmetic.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/scrub-input/scrub-input.tsx",
+          "arcTarget": "@components/arc/scrub-input/scrub-input.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/scrub-input/scrub-input.module.css",
+          "arcTarget": "@components/arc/scrub-input/scrub-input.module.css"
+        }
+      ]
+    },
+    {
+      "name": "search-field",
+      "type": "registry:ui",
+      "title": "Search field",
+      "description": "A recognizable search entry point with clear affordances.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/search-field/search-field.tsx",
+          "arcTarget": "@components/arc/search-field/search-field.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/search-field/search-field.module.css",
+          "arcTarget": "@components/arc/search-field/search-field.module.css"
+        }
+      ]
+    },
+    {
+      "name": "segmented-control",
+      "type": "registry:ui",
+      "title": "Segmented control",
+      "description": "Switch between a small set of related views.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/segmented-control/segmented-control.tsx",
+          "arcTarget": "@components/arc/segmented-control/segmented-control.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/segmented-control/segmented-control.module.css",
+          "arcTarget": "@components/arc/segmented-control/segmented-control.module.css"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "A compact choice field with a keyboard friendly menu.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-select",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/select/select.tsx",
+          "arcTarget": "@components/arc/select/select.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/select/select.module.css",
+          "arcTarget": "@components/arc/select/select.module.css"
+        }
+      ]
+    },
+    {
+      "name": "shortcut-recorder",
+      "type": "registry:ui",
+      "title": "Shortcut recorder",
+      "description": "Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/shortcut-recorder/shortcut-recorder.tsx",
+          "arcTarget": "@components/arc/shortcut-recorder/shortcut-recorder.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/shortcut-recorder/shortcut-recorder.module.css",
+          "arcTarget": "@components/arc/shortcut-recorder/shortcut-recorder.module.css"
+        }
+      ]
+    },
+    {
+      "name": "sign-in",
+      "type": "registry:block",
+      "title": "Sign in",
+      "description": "A sign in card that morphs from email to a six digit code to your account.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "avatar",
+        "button",
+        "input",
+        "otp-input"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/sign-in/sign-in.tsx",
+          "arcTarget": "@components/arc/blocks/sign-in/sign-in.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/sign-in/sign-in.module.css",
+          "arcTarget": "@components/arc/blocks/sign-in/sign-in.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/media.ts",
+          "arcTarget": "@components/arc/lib/media.ts"
+        }
+      ]
+    },
+    {
+      "name": "signature-pad",
+      "type": "registry:ui",
+      "title": "Signature pad",
+      "description": "Smooth ink that thins with speed, with undo, replay, and PNG or SVG export.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/signature-pad/signature-pad.tsx",
+          "arcTarget": "@components/arc/signature-pad/signature-pad.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/signature-pad/signature-pad.module.css",
+          "arcTarget": "@components/arc/signature-pad/signature-pad.module.css"
+        }
+      ]
+    },
+    {
+      "name": "signup-form",
+      "type": "registry:block",
+      "title": "Sign up form",
+      "description": "An account creation flow with field validation, password strength, and a clear completion state.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button",
+        "checkbox",
+        "input",
+        "password-field"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/signup-form/signup-form.tsx",
+          "arcTarget": "@components/arc/blocks/signup-form/signup-form.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/signup-form/signup-form.module.css",
+          "arcTarget": "@components/arc/blocks/signup-form/signup-form.module.css"
+        }
+      ]
+    },
+    {
+      "name": "site-footer",
+      "type": "registry:block",
+      "title": "Site footer",
+      "description": "A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button",
+        "segmented-control"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/site-footer/site-footer.tsx",
+          "arcTarget": "@components/arc/blocks/site-footer/site-footer.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/site-footer/site-footer.module.css",
+          "arcTarget": "@components/arc/blocks/site-footer/site-footer.module.css"
+        }
+      ]
+    },
+    {
+      "name": "site-header",
+      "type": "registry:block",
+      "title": "Site header",
+      "description": "A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "segmented-control"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/site-header/site-header.tsx",
+          "arcTarget": "@components/arc/blocks/site-header/site-header.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/site-header/site-header.module.css",
+          "arcTarget": "@components/arc/blocks/site-header/site-header.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/lib/media.ts",
+          "arcTarget": "@components/arc/lib/media.ts"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Reserve space while content is still loading.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/skeleton/skeleton.tsx",
+          "arcTarget": "@components/arc/skeleton/skeleton.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/skeleton/skeleton.module.css",
+          "arcTarget": "@components/arc/skeleton/skeleton.module.css"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "Pick a value or a range on a track that follows your finger.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/slider/slider.tsx",
+          "arcTarget": "@components/arc/slider/slider.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/slider/slider.module.css",
+          "arcTarget": "@components/arc/slider/slider.module.css"
+        }
+      ]
+    },
+    {
+      "name": "slope-chart",
+      "type": "registry:ui",
+      "title": "Slope chart",
+      "description": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/slope-chart/slope-chart.tsx",
+          "arcTarget": "@components/arc/slope-chart/slope-chart.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/slope-chart/slope-chart.module.css",
+          "arcTarget": "@components/arc/slope-chart/slope-chart.module.css"
+        }
+      ]
+    },
+    {
+      "name": "slot-text",
+      "type": "registry:ui",
+      "title": "Slot text",
+      "description": "Text and numbers that spin into their new value on staggered slot machine reels.",
+      "categories": [
+        "special"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/slot-text/slot-text.tsx",
+          "arcTarget": "@components/arc/slot-text/slot-text.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/slot-text/slot-text.module.css",
+          "arcTarget": "@components/arc/slot-text/slot-text.module.css"
+        }
+      ]
+    },
+    {
+      "name": "sortable-data-table",
+      "type": "registry:ui",
+      "title": "Sortable data table",
+      "description": "Compare structured records with sortable columns.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/sortable-data-table/sortable-data-table.tsx",
+          "arcTarget": "@components/arc/sortable-data-table/sortable-data-table.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/sortable-data-table/sortable-data-table.module.css",
+          "arcTarget": "@components/arc/sortable-data-table/sortable-data-table.module.css"
+        }
+      ]
+    },
+    {
+      "name": "sparkline",
+      "type": "registry:ui",
+      "title": "Sparkline",
+      "description": "Show a compact trend beside a value.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/sparkline/sparkline.tsx",
+          "arcTarget": "@components/arc/sparkline/sparkline.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/sparkline/sparkline.module.css",
+          "arcTarget": "@components/arc/sparkline/sparkline.module.css"
+        }
+      ]
+    },
+    {
+      "name": "split-button",
+      "type": "registry:ui",
+      "title": "Split button",
+      "description": "A primary action with a menu of nearby alternatives.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/split-button/split-button.tsx",
+          "arcTarget": "@components/arc/split-button/split-button.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/split-button/split-button.module.css",
+          "arcTarget": "@components/arc/split-button/split-button.module.css"
+        }
+      ]
+    },
+    {
+      "name": "stats-band",
+      "type": "registry:block",
+      "title": "Stats band",
+      "description": "Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in a hairline grid.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "segmented-control"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/blocks/stats-band/stats-band.tsx",
+          "arcTarget": "@components/arc/blocks/stats-band/stats-band.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/stats-band/stats-band-data.ts",
+          "arcTarget": "@components/arc/blocks/stats-band/stats-band-data.ts"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/stats-band/stats-band.module.css",
+          "arcTarget": "@components/arc/blocks/stats-band/stats-band.module.css"
+        },
+        {
+          "target": "apps/web/src/components/arc/blocks/stats-band/stats-band-world.ts",
+          "arcTarget": "@components/arc/blocks/stats-band/stats-band-world.ts"
+        }
+      ]
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "Stepper",
+      "description": "Show where a person is in a multi-step flow and what is done.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/stepper/stepper.tsx",
+          "arcTarget": "@components/arc/stepper/stepper.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/stepper/stepper.module.css",
+          "arcTarget": "@components/arc/stepper/stepper.module.css"
+        }
+      ]
+    },
+    {
+      "name": "streamgraph",
+      "type": "registry:ui",
+      "title": "Streamgraph",
+      "description": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/streamgraph/streamgraph.tsx",
+          "arcTarget": "@components/arc/streamgraph/streamgraph.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/streamgraph/streamgraph.module.css",
+          "arcTarget": "@components/arc/streamgraph/streamgraph.module.css"
+        }
+      ]
+    },
+    {
+      "name": "swipe-actions",
+      "type": "registry:ui",
+      "title": "Swipe actions",
+      "description": "Reveal row actions with a swipe, or from the same actions in a menu.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/swipe-actions/swipe-actions.tsx",
+          "arcTarget": "@components/arc/swipe-actions/swipe-actions.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/swipe-actions/swipe-actions.module.css",
+          "arcTarget": "@components/arc/swipe-actions/swipe-actions.module.css"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "A tactile toggle for settings that take effect immediately.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-switch",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/switch/switch.tsx",
+          "arcTarget": "@components/arc/switch/switch.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/switch/switch.module.css",
+          "arcTarget": "@components/arc/switch/switch.module.css"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Switch between related content in the same context.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tabs",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/tabs/tabs.tsx",
+          "arcTarget": "@components/arc/tabs/tabs.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/tabs/tabs.module.css",
+          "arcTarget": "@components/arc/tabs/tabs.module.css"
+        }
+      ]
+    },
+    {
+      "name": "tag-input",
+      "type": "registry:ui",
+      "title": "Tag input",
+      "description": "Turn short text values into removable tags.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/tag-input/tag-input.tsx",
+          "arcTarget": "@components/arc/tag-input/tag-input.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/tag-input/tag-input.module.css",
+          "arcTarget": "@components/arc/tag-input/tag-input.module.css"
+        }
+      ]
+    },
+    {
+      "name": "text-morph",
+      "type": "registry:ui",
+      "title": "Text morph",
+      "description": "Morph a label into its next state, letter by letter.",
+      "categories": [
+        "text"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/text-morph/text-morph.tsx",
+          "arcTarget": "@components/arc/text-morph/text-morph.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/text-morph/text-morph.module.css",
+          "arcTarget": "@components/arc/text-morph/text-morph.module.css"
+        }
+      ]
+    },
+    {
+      "name": "text-reveal",
+      "type": "registry:ui",
+      "title": "Text reveal",
+      "description": "Reveal a short piece of content with restrained motion.",
+      "categories": [
+        "text"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/text-reveal/text-reveal.tsx",
+          "arcTarget": "@components/arc/text-reveal/text-reveal.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/text-reveal/text-reveal.module.css",
+          "arcTarget": "@components/arc/text-reveal/text-reveal.module.css"
+        }
+      ]
+    },
+    {
+      "name": "text-shimmer",
+      "type": "registry:ui",
+      "title": "Text shimmer",
+      "description": "Show ongoing work with a calm light across the words.",
+      "categories": [
+        "text"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/text-shimmer/text-shimmer.tsx",
+          "arcTarget": "@components/arc/text-shimmer/text-shimmer.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/text-shimmer/text-shimmer.module.css",
+          "arcTarget": "@components/arc/text-shimmer/text-shimmer.module.css"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "A multiline field for notes, descriptions, and longer text.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/textarea/textarea.tsx",
+          "arcTarget": "@components/arc/textarea/textarea.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/textarea/textarea.module.css",
+          "arcTarget": "@components/arc/textarea/textarea.module.css"
+        }
+      ]
+    },
+    {
+      "name": "theme-switch",
+      "type": "registry:ui",
+      "title": "Theme switcher",
+      "description": "Four smooth ways to move between light and dark appearance.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/theme-switch/theme-switch.tsx",
+          "arcTarget": "@components/arc/theme-switch/theme-switch.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/theme-switch/theme-switch.module.css",
+          "arcTarget": "@components/arc/theme-switch/theme-switch.module.css"
+        }
+      ]
+    },
+    {
+      "name": "theme-switch-eclipse",
+      "type": "registry:ui",
+      "title": "Eclipse",
+      "description": "The next appearance crosses the page like an eclipse.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/theme-switch/theme-switch.tsx",
+          "arcTarget": "@components/arc/theme-switch/theme-switch.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/theme-switch/theme-switch.module.css",
+          "arcTarget": "@components/arc/theme-switch/theme-switch.module.css"
+        }
+      ]
+    },
+    {
+      "name": "theme-switch-rise",
+      "type": "registry:ui",
+      "title": "Rise",
+      "description": "The next appearance rises into place.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/theme-switch/theme-switch.tsx",
+          "arcTarget": "@components/arc/theme-switch/theme-switch.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/theme-switch/theme-switch.module.css",
+          "arcTarget": "@components/arc/theme-switch/theme-switch.module.css"
+        }
+      ]
+    },
+    {
+      "name": "theme-switch-split",
+      "type": "registry:ui",
+      "title": "Split",
+      "description": "The next appearance opens from a slim center seam.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "button"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/theme-switch/theme-switch.tsx",
+          "arcTarget": "@components/arc/theme-switch/theme-switch.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/theme-switch/theme-switch.module.css",
+          "arcTarget": "@components/arc/theme-switch/theme-switch.module.css"
+        }
+      ]
+    },
+    {
+      "name": "time-picker",
+      "type": "registry:ui",
+      "title": "Time picker",
+      "description": "Choose a time with sensible keyboard behavior.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/time-picker/time-picker.tsx",
+          "arcTarget": "@components/arc/time-picker/time-picker.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/time-picker/time-picker.module.css",
+          "arcTarget": "@components/arc/time-picker/time-picker.module.css"
+        }
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:ui",
+      "title": "Timeline",
+      "description": "Follow what happened, newest first, grouped by day.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/timeline/timeline.tsx",
+          "arcTarget": "@components/arc/timeline/timeline.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/timeline/timeline.module.css",
+          "arcTarget": "@components/arc/timeline/timeline.module.css"
+        }
+      ]
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "title": "Toast",
+      "description": "Brief confirmation for a completed background action.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/toast/toast.tsx",
+          "arcTarget": "@components/arc/toast/toast.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/toast/toast.module.css",
+          "arcTarget": "@components/arc/toast/toast.module.css"
+        }
+      ]
+    },
+    {
+      "name": "toast-stack",
+      "type": "registry:ui",
+      "title": "Toast stack",
+      "description": "Stack short results at the edge until you reach for them.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/toast-stack/toast-stack.tsx",
+          "arcTarget": "@components/arc/toast-stack/toast-stack.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/toast-stack/toast-stack.module.css",
+          "arcTarget": "@components/arc/toast-stack/toast-stack.module.css"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle group",
+      "description": "A row of icon or text toggles, single or multiple: one pressed fill glides between options, or each fades in on its own and neighbours join, as in a formatting toolbar.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/toggle-group/toggle-group.tsx",
+          "arcTarget": "@components/arc/toggle-group/toggle-group.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/toggle-group/toggle-group.module.css",
+          "arcTarget": "@components/arc/toggle-group/toggle-group.module.css"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Short supporting text for unfamiliar controls.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/tooltip/tooltip.tsx",
+          "arcTarget": "@components/arc/tooltip/tooltip.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/tooltip/tooltip.module.css",
+          "arcTarget": "@components/arc/tooltip/tooltip.module.css"
+        }
+      ]
+    },
+    {
+      "name": "tree-table",
+      "type": "registry:ui",
+      "title": "Tree table",
+      "description": "A table with nested rows, tri-state selection, hierarchy-preserving sort, and lazy-loaded children.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens",
+        "checkbox"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/tree-table/tree-table.tsx",
+          "arcTarget": "@components/arc/tree-table/tree-table.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/tree-table/tree-table.module.css",
+          "arcTarget": "@components/arc/tree-table/tree-table.module.css"
+        }
+      ]
+    },
+    {
+      "name": "tree-view",
+      "type": "registry:ui",
+      "title": "Tree view",
+      "description": "Navigate nested folders and structured content.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/tree-view/tree-view.tsx",
+          "arcTarget": "@components/arc/tree-view/tree-view.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/tree-view/tree-view.module.css",
+          "arcTarget": "@components/arc/tree-view/tree-view.module.css"
+        }
+      ]
+    },
+    {
+      "name": "treemap",
+      "type": "registry:ui",
+      "title": "Treemap",
+      "description": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/treemap/treemap.tsx",
+          "arcTarget": "@components/arc/treemap/treemap.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/treemap/treemap.module.css",
+          "arcTarget": "@components/arc/treemap/treemap.module.css"
+        }
+      ]
+    },
+    {
+      "name": "usage-meter",
+      "type": "registry:ui",
+      "title": "Usage meter",
+      "description": "Show what fills an allowance and how close it is to the limit.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/usage-meter/usage-meter.tsx",
+          "arcTarget": "@components/arc/usage-meter/usage-meter.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/usage-meter/usage-meter.module.css",
+          "arcTarget": "@components/arc/usage-meter/usage-meter.module.css"
+        }
+      ]
+    },
+    {
+      "name": "user-menu",
+      "type": "registry:ui",
+      "title": "User menu",
+      "description": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/user-menu/user-menu.tsx",
+          "arcTarget": "@components/arc/user-menu/user-menu.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/user-menu/user-menu.module.css",
+          "arcTarget": "@components/arc/user-menu/user-menu.module.css"
+        }
+      ]
+    },
+    {
+      "name": "waffle-chart",
+      "type": "registry:ui",
+      "title": "Waffle chart",
+      "description": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "arc-motion-tokens"
+      ],
+      "files": [
+        {
+          "target": "apps/web/src/components/arc/waffle-chart/waffle-chart.tsx",
+          "arcTarget": "@components/arc/waffle-chart/waffle-chart.tsx"
+        },
+        {
+          "target": "apps/web/src/components/arc/waffle-chart/waffle-chart.module.css",
+          "arcTarget": "@components/arc/waffle-chart/waffle-chart.module.css"
+        }
+      ]
+    }
+  ]
+}
